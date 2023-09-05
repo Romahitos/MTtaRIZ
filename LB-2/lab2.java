@@ -30,7 +30,7 @@ public class lab2 {
     public static int[][] createIntArray(int rows, int cols) {
         int[][] array = new int[rows][cols];
         int value = 1;
-        System.out.print("Масив:\n");
+        System.out.print("Масив:yutug\n");
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
                 array[i][j] = value;
