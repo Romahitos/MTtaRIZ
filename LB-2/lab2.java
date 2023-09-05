@@ -23,7 +23,7 @@ public class lab2 {
                 System.out.print("*");
             }
 
-            System.out.println(); // Перехід на новий рядок
+            System.out.println(); 
         }
     }
     
@@ -46,7 +46,7 @@ public class lab2 {
             for (int j = 0; j < array[i].length; j++) {
                 System.out.print(array[i][j] + " ");
             }
-            System.out.println(); // Перехід на новий рядок після кожного рядка масиву
+            System.out.println(); 
         }
     }
 
