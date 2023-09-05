@@ -1,16 +1,36 @@
-public class Main {
+public class lab2 {
     public static void main(String[] args) {
-        int rows = 4; // Кількість рядків масиву
-        int cols = 5; // Кількість стовпців масиву
-
+        int levels = 6; 
+        int rows = 4; 
+        int cols = 5; 
+        Tree(levels);
         int[][] array = createIntArray(rows, cols);
         printIntArray(array);
+        
+
     }
 
+    public static void Tree(int levels) {
+        for (int i = 0; i < levels; i++) {
+            // Виводимо пробіли для вирівнювання
+              for (int j = 0; j < levels - i - 1; j++) {
+                System.out.print(" ");
+            }
+            
+
+            // Виводимо зірочки
+            for (int j = 0; j < i * 1 + 1; j++) {
+                System.out.print("*");
+            }
+
+            System.out.println(); // Перехід на новий рядок
+        }
+    }
+    
     public static int[][] createIntArray(int rows, int cols) {
         int[][] array = new int[rows][cols];
         int value = 1;
-
+        System.out.print("Масив:\n");
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
                 array[i][j] = value;
@@ -29,4 +49,5 @@ public class Main {
             System.out.println(); // Перехід на новий рядок після кожного рядка масиву
         }
     }
+
 }
