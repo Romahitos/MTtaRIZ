@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Romochka</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Raleway", sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            background: radial-gradient(circle, #65c7f7, #1d98c7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        html {
+            font-size: 18px;
+        }
+
+        .container {
+            width: 65vmin;
+            height: 65vmin;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2vmin;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 16px;
+            padding: 2vmin;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .div-option {
+    background: #f7ca18;
+    width: 12vmin;
+    height: 12vmin;
+    transform: rotate(45deg); 
+    margin: 3vmin; 
+    border: 2px solid #e67e22;
+    border-radius: 10%; 
+    font-size: 10vmin;
+    color: #e74c3c;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="div-option"><span th:utext="${var0}"></span></div>
+        <div class="div-option"><span th:utext="${var1}"></span></div>
+        <div class="div-option"><span th:utext="${var2}"></span></div>
+        <div class="div-option"><span th:utext="${var3}"></span></div>
+        <div class="div-option"><span th:utext="${var4}"></span></div>
+        <div class="div-option"><span th:utext="${var5}"></span></div>
+        <div class="div-option"><span th:utext="${var6}"></span></div>
+        <div class="div-option"><span th:utext="${var7}"></span></div>
+        <div class="div-option"><span th:utext="${var8}"></span></div>
+    </div>
+</body>
+
+</html>
